@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روش نابجایی با توابع مثلثاتی</title>
+    <link rel="stylesheet" href="css/twoPart.css">
+</head>
+<body>
+
+    <!-- <h2>یافتن ریشه معادله با روش نابجایی</h2>
+
+    <form >
+        <label for="func">تابع را وارد کنید (مثلاً: Math.sin(x) - x/2):</label><br>
+        <input type="text" id="func" required><br><br>
+
+        <label for="start">مقدار شروع بازه (رادیان):</label><br>
+        <input type="number" id="start" required><br><br>
+
+        <label for="end">مقدار پایان بازه (رادیان):</label><br>
+        <input type="number" id="end" required><br><br>
+
+        <label for="epsilon">میزان دقت (مثلاً: 0.001):</label><br>
+        <input type="number" step="any" id="epsilon" required><br><br>
+
+        <button type="button" onclick="calculateRoot()">محاسبه</button>
+    </form> -->
+
+    <div class="login">
+        <div class="hader">
+            <span>روش نابجایی</span>
+        </div>
+        <form id="falsePositionForm">
+            <input type="text" placeholder="مثال: Math.sin(x) + x**2 - 1" required="" id="func" />
+            <input type="number" placeholder="بازه شروع" required="" id="start" />
+            <input type="number" placeholder="بازه پایان" required="" id="end" />
+            <input type="text" placeholder="میزان دقت" required="" step="any" id="epsilon" />
+            <button type="button" onclick="calculateRoot()">محاسبه ریشه</button>
+            <!-- <input type="button" value="Signup" /> -->
+            <span><a href="index.html">محاسبه با روش های دیگر</a></span>
+        </form>
+    </div>
+
+    <h3>نتیجه:</h3>
+    <div id="result"></div>
+
+    <script src="js/displacement.js"></script>
+
+</body>
+</html>

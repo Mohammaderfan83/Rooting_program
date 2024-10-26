@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/twoPart.css">
+    <title>روش نقطه ثابت</title>
+</head>
+<body>
+
+    <div class="login">
+        <div class="hader">
+            <span>روش نقطه ثابت</span>
+        </div>
+        <form id="fixedPointForm">
+            <input type="text" placeholder="مثال: Math.sin(x) + x**2 - 1" required="" id="func" />
+            <input type="number" placeholder="نقطه شروع" required="" id="initial" />
+            <input type="number" placeholder="میزان دقت" required="" id="epsilon" />
+            <input type="number" placeholder="حداکثر تعدادتکرار" required=""  id="maxIter" />
+            <button type="button" onclick="calculateRoot()">محاسبه ریشه</button>
+            <!-- <input type="button" value="Signup" /> -->
+            <span><a href="index.html">محاسبه با روش های دیگر</a></span>
+        </form>
+    </div>
+
+    <h3>نتیجه:</h3>
+    <div id="result"></div>
+
+    <script src="js/fixedPoint.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه ریشه به روش دوبخشی</title>
+    <link rel="stylesheet" href="css/twoPart.css">
+</head>
+<body>
+    <div class="login">
+        <div class="hader">
+            <span>روش دوبخشی</span>
+        </div>
+        <form id="bisectionForm">
+            <input type="text" placeholder="مثال: Math.sin(x) + x**2 - 1" required="" id="functionInput" />
+            <input type="number" placeholder="بازه شروع" required="" id="aInput" />
+            <input type="number" placeholder="بازه پایان" required="" id="bInput" />
+            <input type="text" placeholder="میزان دقت" required="" id="toleranceInput" step="any" />
+            <button type="button" onclick="calculateRoot()">محاسبه ریشه</button>
+            <!-- <input type="button" value="Signup" /> -->
+            <span><a href="index.html">محاسبه با روش های دیگر</a></span>
+        </form>
+    </div>
+
+    <h3>نتیجه:</h3>
+    <p id="result"></p>
+
+    <script src="js/twoPart.js"></script>
+</body>
+</html>
