@@ -126,6 +126,17 @@ body{
 
 
 
+@media screen and (max-width:550px) 
+{
+  .card{
+    width: 85%;
+    height: 400px;
+  }
+  .btn{
+    width: 80%;
+    font-size: 15px;
+  }
+}
 
 
   

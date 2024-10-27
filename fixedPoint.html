@@ -13,19 +13,15 @@
             <span>روش نقطه ثابت</span>
         </div>
         <form id="fixedPointForm">
-            <input type="text" placeholder="مثال: Math.sin(x) + x**2 - 1" required="" id="func" />
+            <input type="text" placeholder="مثال: Math.cos(x) + x**2 - x" required="" id="func" />
             <input type="number" placeholder="نقطه شروع" required="" id="initial" />
             <input type="number" placeholder="میزان دقت" required="" id="epsilon" />
             <input type="number" placeholder="حداکثر تعدادتکرار" required=""  id="maxIter" />
             <button type="button" onclick="calculateRoot()">محاسبه ریشه</button>
-            <!-- <input type="button" value="Signup" /> -->
             <span><a href="index.html">محاسبه با روش های دیگر</a></span>
+            <div id="result"></div>
         </form>
     </div>
-
-    <h3>نتیجه:</h3>
-    <div id="result"></div>
-
     <script src="js/fixedPoint.js"></script>
 
 </body>

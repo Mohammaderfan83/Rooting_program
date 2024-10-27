@@ -14,9 +14,8 @@ body{
     justify-content: center;
     align-items: center;
     direction: rtl;
-    width: 280px;
     margin-top: 50px;
-    max-width: 280px;
+    /* max-width: 280px; */
     background-color: #74bacd;
     border-radius: 15px;
     font-family: 'vazir' !important;
@@ -75,3 +74,19 @@ body{
     font-weight: 500;
   }
   
+  @media screen and (max-width:550px) {
+    .login{
+      width: 85%;
+    }
+  }
+  
+  #result{
+    font-family: 'vazir' !important;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 18px;
+    margin-top: -16px;
+  }
+  h3{
+    font-family: 'vazir';
+  }
