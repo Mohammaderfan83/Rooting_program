@@ -6,7 +6,7 @@ function evaluateFunction(func, x) {
 // محاسبه ریشه به روش دوبخشی
 function bisectionMethod(func, a, b, tol) {
     if (evaluateFunction(func, a) * evaluateFunction(func, b) >= 0) {
-        document.getElementById("result").textContent = "بازه انتخابی مناسب نیست. تابع باید نشانه‌های متضاد در دو سر بازه داشته باشد.";
+        document.getElementById("result").textContent = "معادله در بازه مشخص شده فاقد ریشه می ‌باشد.";
         return null;
     }
 
@@ -36,6 +36,12 @@ function calculateRoot() {
 
     const result = bisectionMethod(func, a, b, tol);
     if (result !== null) {
-        document.getElementById("result").textContent = `ریشه تقریبی: ${result.root}\nتعداد تکرارها: ${result.iterations}`;
+        // document.getElementById("result").textContent = `ریشه معادله: ${result.root}تعداد تکرارها: ${result.iterations}`;
+        if(func && a && b && tol){
+            document.getElementById("result").innerHTML = `ریشه معادله: ${result.root.toFixed(3)}<br>تعداد تکرارها: ${result.iterations}`;
+        }else{
+            alert('لطفا تمامی فیلدها را کامل کنید');
+        }
+
     }
 }

@@ -50,9 +50,7 @@ body{
     border-radius: 8px;
     font-family: 'vazir';
   }
-  form input:focus{
-    direction: ltr;
-  }
+
   form button{ 
     font-family: 'vazir';
     height: 50px;
@@ -89,4 +87,7 @@ body{
   }
   h3{
     font-family: 'vazir';
+  }
+  #functionInput:focus,#func:focus{
+    direction: ltr;
   }

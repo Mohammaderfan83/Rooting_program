@@ -21,7 +21,7 @@ function falsePositionMethod(func, start, end, epsilon) {
         if (Math.abs(end - start) < epsilon) break;
     }
 
-    document.getElementById("result").innerHTML = `ریشه معادله: ${root}<br>تعداد تکرارها: ${iterations}`;
+    document.getElementById("result").innerHTML = `ریشه معادله: ${root.toFixed(3)}<br>تعداد تکرارها: ${iterations}`;
 }
 
 function calculateRoot() {
@@ -29,6 +29,11 @@ function calculateRoot() {
     const start = parseFloat(document.getElementById("start").value);
     const end = parseFloat(document.getElementById("end").value);
     const epsilon = parseFloat(document.getElementById("epsilon").value);
+    if(func && start && end && epsilon){
+        falsePositionMethod(func, start, end, epsilon);
+    }else{
+        alert('لطفا تمامی فیلدها را کامل کنید')
+    }
 
-    falsePositionMethod(func, start, end, epsilon);
+    
 }

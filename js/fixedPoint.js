@@ -31,6 +31,10 @@ function calculateRoot() {
     const initial = parseFloat(document.getElementById("initial").value);
     const epsilon = parseFloat(document.getElementById("epsilon").value);
     const maxIter = parseInt(document.getElementById("maxIter").value);
-
-    fixedPointMethod(func, initial, epsilon, maxIter);
+    if(func && initial && epsilon && maxIter){
+        fixedPointMethod(func, initial, epsilon, maxIter);
+    }else{
+        alert('لطفا تمامی فیلدها را کامل کنید');
+    }
+    
 }
