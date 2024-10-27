@@ -20,7 +20,7 @@ function fixedPointMethod(func, initial, epsilon, maxIter) {
 
     // نمایش نتیجه
     if (isConvergent) {
-        document.getElementById("result").innerHTML = `ریشه تقریبی: ${x}<br>تعداد تکرارها: ${iterations}<br>همگرا شده است.`;
+        document.getElementById("result").innerHTML = `ریشه تقریبی: ${x.toFixed(3)}<br>تعداد تکرارها: ${iterations}<br>تابع وارد شده همگراست`;
     } else {
         document.getElementById("result").innerHTML = `پس از ${iterations} تکرار، همگرایی حاصل نشد و روش واگرا است.`;
     }
